@@ -103,6 +103,15 @@
                         </ChainExpression>
                       </ScreenExpressionTree>
                     </ControlPropertySource>
+                    <ControlPropertySource
+                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[Tap]">
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <CallExpression
+                            Target="BrowseHoldingInventories/Methods[TapMethod]" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ControlPropertySource>
                   </ContentItem.PropertySources>
                 </ContentItem>
                 <ContentItem
@@ -149,7 +158,7 @@
                   <ScreenExpressionTree>
                     <ChainExpression>
                       <CallExpression
-                        Target="BrowseHoldingInventories/Methods[Method]" />
+                        Target="BrowseHoldingInventories/Methods[TapMethod]" />
                     </ChainExpression>
                   </ScreenExpressionTree>
                 </ControlPropertySource>
@@ -268,7 +277,7 @@
           ParameterType=":String" />
       </ScreenMethod>
       <ScreenMethod
-        Name="Method" />
+        Name="TapMethod" />
     </Screen.Methods>
     <Screen.Properties>
       <ScreenCollectionProperty

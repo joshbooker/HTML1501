@@ -21,7 +21,7 @@ myapp.BrowseHoldingInventories.selectNextStrRqsNum_execute = function (screen)
     };
 };
 
-myapp.BrowseHoldingInventories.Method_execute = function (screen) {
+myapp.BrowseHoldingInventories.TapMethod_execute = function (screen) {
     // tap method of list item on borwse screen.
 
     //handy way to save/set scroll position
@@ -60,7 +60,7 @@ myapp.BrowseHoldingInventories.Method_execute = function (screen) {
             {   //try to select next item in list
                 if (myapp.BrowseHoldingInventories.selectNextStrRqsNum_execute(screen) == true)
                 {   //next item selected then recurse
-                    myapp.BrowseHoldingInventories.Method_execute(screen);
+                    myapp.BrowseHoldingInventories.TapMethod_execute(screen);
                 }
             }
         }
